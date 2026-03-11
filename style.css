@@ -1,0 +1,121 @@
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 100px;
+    font-size: 70px;
+}
+header {
+    background-image: url(header.png);
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+font-family:sans-serif;
+text-align:center;
+}
+
+.progress-ring{
+width:150px;
+height:150px;
+margin:20px auto;
+border-radius:50%;
+
+--progress:0%;
+
+background:conic-gradient(
+#00ff88 var(--progress),
+#222 var(--progress)
+);
+
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+
+transition:--progress 0.5s ease;
+}
+
+/* 中央の穴 */
+.progress-ring::before{
+content:"";
+position:absolute;
+width:110px;
+height:110px;
+background:#0f0f0f;
+border-radius:50%;
+}
+
+#percentText{
+position:relative;
+font-size:28px;
+font-weight:bold;
+}
+
+#percentText{
+position:relative;
+font-size:28px;
+font-weight:bold;
+}
+
+.habit{
+background:#1c1c1c;
+margin:10px auto;
+padding:12px;
+border-radius:10px;
+
+display:flex;
+align-items:center;
+gap:12px;
+
+transition:0.2s;
+}
+
+.habit:hover{
+transform:scale(1.02);
+background:#242424;
+}
+
+.habit input[type="checkbox"]{
+transform:scale(1.6);
+cursor:pointer;
+}
+
+button{
+background:#00ff88;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+}
+
+input{
+padding:8px;
+border-radius:6px;
+border:none;
+}
+
+#calendar{
+display:grid;
+grid-template-columns:repeat(7,30px);
+gap:6px;
+justify-content:center;
+margin-top:10px;
+}
+
+.day{
+font-size:18px;
+}
+
+@keyframes pop {
+0% { transform: scale(1); }
+50% { transform: scale(1.08); }
+100% { transform: scale(1); }
+}
+
+.habit.pop{
+animation: pop 0.25s ease;
+}
