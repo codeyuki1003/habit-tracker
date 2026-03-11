@@ -1,15 +1,21 @@
 h1 {
     text-align: center;
     color: #ffffff;
+    
     font-size: 70px;
 }
 header {
     background-image: url(header.png);
-    height: 0px;
+    height: 100px;
     background-position: center;
     background-size: cover;
 }
-
+/* スマホ用 */
+@media (max-width: 600px) {
+    header {
+        height: 0px;
+    }
+}
 body{
 background:#0f0f0f;
 color:white;
