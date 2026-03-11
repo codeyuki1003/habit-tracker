@@ -6,7 +6,7 @@ h1 {
 }
 header {
     background-image: url(header.png);
-    height: 40vh;
+    height: 0px;
     background-position: center;
     background-size: cover;
 }
