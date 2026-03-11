@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HABIT TRACKER</h1>
+    </header>
+
+    <div class="progress-ring" id="ring">
+    <div id="percentText">0%</div>
+    </div>
+
+    <h2>Today's Habits</h2>
+
+    <div id="habitList"></div>
+
+    <div class="addHabit">
+    <input id="habitInput" placeholder="新しい習慣">
+    <button onclick="addHabit()">追加</button>
+    </div>
+
+    <h3 id="streak">🔥 0 day streak</h3>
+
+    <h2>Calendar</h2>
+    <div id="calendar"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
